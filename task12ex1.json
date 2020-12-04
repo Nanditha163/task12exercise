@@ -1,0 +1,26 @@
+#Create a JSON of all object types and import the JSON into sql database
+#(NOTE:The JSON file should have values of all datatypes)
+person={ }
+person["abc"]={
+    "name":"abc",
+    "Address":"Tamilnadu",
+    "Contact":"12345",
+    "email":None,
+    "female":True
+    }
+person["xyz"]={
+    "name":"xyz",
+    "Address":"Kerala",
+    "Contact":"67890",
+    "email":"xyz@gmail.com",
+    "female":False
+    }
+print(person)
+
+import json
+s=json.dumps(person)
+print(s)
+
+
+
+
